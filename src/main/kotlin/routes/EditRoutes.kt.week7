@@ -54,7 +54,7 @@ fun Routing.configureEditRoutes() {
             // No-JS mode: Full page with edit form
             // (For simplicity, redirect to list with edit=id query param)
             val html = call.renderTemplate(
-                "tasks/edit.peb"
+                "tasks/edit.peb",
                 mapOf("task" to task.toPebbleContext())
             )
             call.respondText(html, ContentType.Text.Html)
