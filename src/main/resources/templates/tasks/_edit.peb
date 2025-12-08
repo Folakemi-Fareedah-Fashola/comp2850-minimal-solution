@@ -1,6 +1,6 @@
 <li id="task-{{ task.id }}" class="task-edit">
-  <form action="/tasks/{{ task.id }}/update" method="post"
-        hx-post="/tasks/{{ task.id }}/update"
+  <form action="/tasks/{{ task.id }}/edit" method="post"
+        hx-post="/tasks/{{ task.id }}/edit"
         hx-target="#task-{{ task.id }}"
         hx-swap="outerHTML">
 
